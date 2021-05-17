@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>🚗 Car Game</title>
+</head>
+<body>
+   
+  <div class="body">
+
+  <div class="score"></div> 
+
+  <div class="game">
+
+      <div class="startScreen">Press here to Start<br><br>Arrow keys to move<br><br>If you hit a red car you will lose</div>
+      <div class="gameArea"></div>
+
+  </div>
+  
+  <div class="selections">
+
+  <div class="diff-level">
+
+    <h4>Change gear:<h6>(or use keyboard)</h6></h4>
+
+  <div class="form-check-inline">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio" id="easy" onclick="levelChange()" checked>1(a)
+    </label>
+  </div>
+  <div class="form-check-inline">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio" id="medium" onclick="levelChange()">2(w)
+    </label>
+  </div>
+  <div class="form-check-inline">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio" id="difficult" onclick="levelChange()">3(d)
+    </label>
+  </div>
+  <div class="form-check-inline">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio" id="impossible" onclick="levelChange()">4(s)
+    </label>
+  </div>
+
+  </div>  
+  <br><br><br>
+  <div class="car-color">
+
+    <h4>Car Color:</h4>
+
+  <div class="form-check-inline">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio2" id="green" onclick="colorChange()" checked>Green
+    </label>
+  </div>
+  <div class="form-check-inline">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio2" id="blue" onclick="colorChange()">Blue
+    </label>
+  </div>
+  <div class="form-check-inline">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio2" id ="yellow" onclick="colorChange()">Yellow
+    </label>
+  </div>
+  <div class="form-check-inline">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optradio2" id="pink" onclick="colorChange()">Pink
+    </label>
+  </div>
+
+  </div>  
+
+  </div>
+
+  </div>
+
+  <div class="alert">
+    <h4 style="color: red;">ALERT</h4><hr>
+    <h3>Screen width should be greater than 990px</h3>
+  </div>
+
+  <script src="app.js"></script>  
+</body>
+</html>
